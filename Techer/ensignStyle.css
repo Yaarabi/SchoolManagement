@@ -15,14 +15,59 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* position: relative; */
+}
+
+nav .profile{
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 nav h2 {
     margin: 0;
+    font-size: 2rem;
+    width: 60%;
+    text-align: center;
+}
+
+#dropMenu{
+    position: fixed;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    left: 0vw;
+    top: 0vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 95vh;
+    width: 15vw;
+    background-color: #d9d9d9;
+
+    #close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    img{
+        cursor: pointer;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 40%;
+    }
 }
 
 .icon{
-    width: 60%;
+    width: 10%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -36,13 +81,24 @@ nav h2 {
     opacity: 0.8;
 }
 
-
+#boite{
+    visibility: hidden;
+    position: absolute;
+    left: 11vw;
+    top: 13vh;
+    height: 35vh;
+    width: 40vw;
+    background-color: #4CAF50;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
 main {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/icon/bagck.jpg");
+    background-image: url("/icon/clssBag.jpg");
     background-size: cover;
 }
 

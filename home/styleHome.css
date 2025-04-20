@@ -110,8 +110,8 @@ section div:hover {
     border-radius: 20px;
         #close{
             position: absolute;
-            top: 5px;
-            right: 5px;
+            top: 10px;
+            right: 10px;
         }
     .div{
         display: flex;
@@ -167,8 +167,8 @@ section div:hover {
 
     #closeSign{
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 10px;
+        right: 10px;
     }
 
     form{
