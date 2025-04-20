@@ -11,7 +11,7 @@
         <h1>One School One Place</h1>
         <div class="btnLog">
             <button id="login">Login</button>
-            <button>Sing In</button>
+            <button id="signIn">Sing In</button>
         </div>
     </nav>
     <main>
@@ -19,10 +19,54 @@
         <p id="description"><span></span> is an innovative web platform crafted by Youssef Aarabi to revolutionize the way schools are managed. This user-friendly site offers dedicated spaces for both teachers and students, facilitating seamless communication and organization. Teachers can efficiently manage their groups by recording grades, tracking attendance, and sharing course materials, while students enjoy an interactive space tailored to their educational needs. By combining these features, <span></span> creates a cohesive and collaborative environment for educators and learners alike, promoting a streamlined approach to modern education.</p>
         <!-- </div> -->
         <section>
-            <div>Teacher</div>
-            <div>Etudient</div>
+            <div id="teacherPlace">Teacher</div>
+            <div id="studPlace">Etudient</div>
         </section>
     </main>
-    <script src="home.js"></script>
+    <div id="loginForm" class="form">
+        <img id="close" src="/icon/close.png" height="30px" alt="close icon">
+            <div class="div">
+                <div class="input">
+                    <label for="password">Email :</label>
+                    <input id="email" type="text" name="Email" placeholder="example@gmail.com">
+                </div>
+                <div class="input">
+                    <label for="password">Password :</label>
+                    <input id="password" type="password" name="password" placeholder="Your password">
+                </div>
+                <button id="btnForTeacher">login</button>
+                <button id="btnForStud">login</button>
+            </div>
+    </div>
+    <div id="singinForm">
+        <img id="closeSign" src="/icon/close.png" height="30px" alt="close icon">
+            <form>
+                <div class="name">           
+                    <label for="name">Full Name :</label>
+                    <input id="name" type="text" name="name" placeholder="Full Name">
+                </div>
+                <div class="email">
+                    <label for="email">Email :</label>
+                    <input id="newEmail" type="text" name="Email" placeholder="example@gmail.com">
+                </div>
+                <div class="choose">
+                    <label for="Choose">Choose :</label>
+                    <select id="Choose">
+                        <option value="Teacher">Teacher</option>
+                        <option value="Student">Student</option>
+                    </select>
+                </div>
+                <div class="password">
+                    <label for="password">Password :</label>
+                    <input id="newPass" type="password" name="password" placeholder="Enter password">
+                </div>
+                <div class="password">
+                    <label for="password">Password :</label>
+                    <input id="samePass" type="password" name="password" placeholder="Renter password">
+                </div>
+            </form>
+            <button id="submit">Submit</button>
+    </div>
+    <script type="module" src="home.js"></script>
 </body>
 </html>
