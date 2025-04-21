@@ -102,7 +102,90 @@ main {
     background-size: cover;
 }
 
+.section{
 
+    height: 70vh;
+    width: 100vw;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    position: relative;
+        #return{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+    #userList{
+        
+        height: 100%;
+        width: 60%;
+        border: #4CAF50;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        table{
+            width: 100%;
+            tr{
+                background-color: #4CAF50;
+                height: 30px;
+                width: 100%;
+            }
+        }
+    }
+    #form{
+        height: 60%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(255, 255, 255);
+        border: 3px solid #4CAF50;
+        border-radius: 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        
+        .input{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 24vw;
+            height: 20%;
+            font-weight: bolder;
+            input{
+                width: 17vw;
+                height: 30px;
+                /* border-top: 1px;
+                border-right: 1px;
+                border-left: 1px; */
+                border: 1px;
+                /* border-color: green; */
+                background-color: rgb(238, 248, 241);
+            }
+            select{
+                width: 17.2vw;
+                height: 33px;
+                /* border-top: 1px;
+                border-right: 1px;
+                border-left: 1px; */
+                border: 1px;
+                border-color: green;
+                background-color: rgb(238, 248, 241);
+            }
+        }
+        #Submit{
+            height: 40px;
+            width: 100px;
+            background-color: green;
+            color: white;
+            border: none;
+            font-weight: bolder;
+            border-radius: 5px;
+        }
+        
+    }
+}
 
 .dashboard {
     display: grid;
@@ -121,6 +204,8 @@ main {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, background-color 0.3s;
     cursor: pointer;
+    font-weight: bolder;
+    font-size: 2rem;
 }
 
 .dashboard div:hover {

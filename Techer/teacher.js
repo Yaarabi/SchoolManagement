@@ -3,6 +3,13 @@
 // export let nameOfteacher = 555
 
 // document.getElementById('teacherName')
+
+let db={
+    group1:[],
+    group2:[],
+    group3:[],
+    group4:[],
+}
 let menu = document.getElementById('dropMenu')
 let menuIcon = document.getElementById('menuBar')
 menuIcon.addEventListener('click', ()=>{
@@ -27,4 +34,16 @@ boite.addEventListener('click', ()=>{
 })
 message.addEventListener('click', ()=>{
     message.style.visibility='hidden'
+})
+let groupManag = document.getElementById('gestion')
+let list = document.getElementById('groups')
+let dash = document.querySelector('.dashboard')
+let back = document.getElementById('return')
+groupManag.addEventListener('click', ()=>{
+    dash.style.display='none'
+    list.style.display='flex'
+})
+back.addEventListener('click', ()=>{
+    dash.style.display='grid'
+    list.style.display='none'
 })
